@@ -1,0 +1,106 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 100px 0 0 0;
+  background: rgb(248, 248, 248);
+}
+
+.inputContainer input {
+  width: 20vw;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.424);
+  border: none;
+  height: 50px;
+  border-radius: 10px;
+}
+.inputContainer button {
+  height: 50px;
+  margin: 0 0 0 10px;
+  border: none;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.424);
+  border-radius: 10px;
+}
+.todolist {
+  width: 50vw;
+  height: calc(90vh - 100px);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.424);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.todos {
+  margin: 30px 0 0 0;
+
+  width: 50vw;
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.todos2 {
+  margin: 30px 0 0 0;
+
+  width: 50vw;
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.todo {
+  display: flex;
+  width: 40vw;
+  margin: 30px 0 0 0;
+  justify-content: space-around;
+  align-items: center;
+  border: 2px solid rgb(0, 0, 0);
+  padding: 10px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.434);
+}
+.todo .checkbox input[type='checkbox']:checked + span {
+  text-decoration: line-through;
+}
+input[type='checkbox']:checked ~ .task span {
+  text-decoration: line-through;
+}
+.checkbox {
+  /*  width: calc(50vw / 6); */
+  width: 50px;
+  margin: 0 0 0 0;
+  display: flex;
+  /* border: 1px solid black; */
+  justify-content: flex-end;
+}
+
+.checkbox [type='checkbox'] {
+  width: 50px;
+}
+.task {
+  width: calc(50vw / 3);
+}
+.btns {
+  width: calc(50vw / 3);
+
+  display: flex;
+  justify-content: flex-end;
+}
+.btns button {
+  margin: 0 0 0 10px;
+}
+.delete svg {
+  fill: white;
+  /* border: 1px solid red; */
+  width: 20px;
+}
+.edit svg {
+  width: 20px;
+  fill: white;
+}
